@@ -47,8 +47,10 @@ class MahasiswaController extends Controller
             'jurusan' => 'required',
             'no_handphone' => 'required',
         ]);
+
         //fungsi eloquent untuk menambah data
         Mahasiswa::create($request->all());
+        
         //jika data berhasil ditambahkan, akan kembali ke halaman utama
         return redirect()->route('mahasiswa.index')
             ->with('success', 'Mahasiswa Berhasil Ditambahkan');
