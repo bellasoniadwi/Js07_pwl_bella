@@ -37,8 +37,8 @@
             <td>{{ $Mahasiswa->no_handphone }}</td>
             <td>
                 <form action="{{ route('mahasiswa.destroy',$Mahasiswa->nim) }}" method="POST">
-                    <a class="btn btninfo" href="{{ route('mahasiswa.show',$Mahasiswa->Nim) }}">Show</a>
-                    <a class="btn btnprimary" href="{{ route('mahasiswa.edit',$Mahasiswa->Nim) }}">Edit</a>
+                    <a class="btn btn-info" href="{{ route('mahasiswa.show',$Mahasiswa->nim) }}">Show</a>
+                    <a class="btn btn-primary" href="{{ route('mahasiswa.edit',$Mahasiswa->nim) }}">Edit</a>
                     
                     @csrf
                     @method('DELETE')
